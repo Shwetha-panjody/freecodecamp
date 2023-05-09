@@ -7,7 +7,7 @@
 }
 .div2
 {
-   margin-top: 49vw;
+   /* margin-top: 49vw; */
    background-color: var(--bg-col3);
   padding-bottom: 45px;
 }
@@ -153,7 +153,7 @@ a{
 #welcome-section
 {
     display: flex;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100vh;
     /* margin-top:67px; */
