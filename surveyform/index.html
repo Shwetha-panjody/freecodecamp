@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form">
-      <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter Your Name" required>
-      </label>
-        <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter Your Email" required>
-      </label>
-      <label for="number" id="number-label">Age
-(optional)<input type="number" id="number" min="13" max="102" placeholder="Age" >
-      </label>
-       <label for="dropdown">Which option best describes your current role?
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <img src="https://media.giphy.com/media/f67OPmT0AUYRuLv7gT/giphy.gif" alt="">
+    <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter Your Name" required>
+    </label>
+    <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter Your Email" required>
+    </label>
+    <label for="number" id="number-label">Age
+      (optional)<input type="number" id="number" min="13" max="102" placeholder="Age">
+    </label>
+    <label for="dropdown">Which option best describes your current role?
       <select id="dropdown">
         <option selected disabled>select an option</option>
         <option>1</option>
@@ -24,24 +27,25 @@
         <option>5</option>
       </select>
     </label>
-    
-     <label for="recmd">Would you recommend freeCodeCamp to a friend?</label>
-      <label id="l1"><input class="input-radio" type="radio" id="recmd" value="Definitely" name="recmd">Definitely</label>
-      <label id="l1"><input type="radio"   class="input-radio" id="recmd" value="Maybe" name="recmd">Maybe</label>
-      <label id="l1"><input type="radio"
-      class="input-radio" id="recmd" value="Notsure" name="recmd">Not sure</label>
-   <label id="l1" for="vehicle1"><input 
-   class="input-checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a bike</label>
- <label id="l1" for="vehicle2">  <input 
-  class="input-checkbox" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  I have a car</label>
-  <label id="l1" for="vehicle3"><input type="checkbox" 
-  class="input-checkbox"id="vehicle3" name="vehicle3" value="Boat"> I have a boat</label>
-  <label>
-    Any comments or suggestions?
-    <textarea placeholder="enter details...."></textarea>
-  </label>
-  <input type="submit" id="submit">
-    </form>
-  </body> 
+
+    <label for="recmd">Would you recommend freeCodeCamp to a friend?</label>
+    <label id="l1"><input class="input-radio" type="radio" id="recmd" value="Definitely" name="recmd">Definitely</label>
+    <label id="l1"><input type="radio" class="input-radio" id="recmd" value="Maybe" name="recmd">Maybe</label>
+    <label id="l1"><input type="radio" class="input-radio" id="recmd" value="Notsure" name="recmd">Not sure</label>
+    <label for="recmd">What vehicle you have ?</label>
+    <label id="l1" for="vehicle1"><input class="input-checkbox" type="checkbox" id="vehicle1" name="vehicle1"
+        value="Bike"> I have a bike</label>
+    <label id="l1" for="vehicle2"> <input class="input-checkbox" type="checkbox" id="vehicle2" name="vehicle2"
+        value="Car">
+      I have a car</label>
+    <label id="l1" for="vehicle3"><input type="checkbox" class="input-checkbox" id="vehicle3" name="vehicle3"
+        value="Boat"> I have a boat</label>
+    <label>
+      Any comments or suggestions?
+      <textarea placeholder="enter details...." rows="4"></textarea>
+    </label>
+    <input type="submit" id="submit">
+  </form>
+</body>
+
 </html>
