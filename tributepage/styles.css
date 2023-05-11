@@ -16,7 +16,7 @@ body{
     margin: 10px;
 }
 main{
-    background-color: rgb(180, 175, 169);
+    background-color: rgb(177, 191, 207);
     padding: 10px;
     border-radius: 6px;
 }
@@ -43,7 +43,7 @@ h1{
     text-align: justify;
     color: black;
     font-size: 15px;
-    width: 50%;
+    width: 60%;
     letter-spacing: 1px;
     word-spacing: 1px;
     line-height: 25px;
