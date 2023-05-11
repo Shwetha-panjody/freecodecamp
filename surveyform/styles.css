@@ -60,6 +60,7 @@ h1, p {
     padding:0px;
     padding: 2px 0 2px 2px;
   }
+  
   select::backdrop
   {
     padding: 2px 0 2px 2px;
