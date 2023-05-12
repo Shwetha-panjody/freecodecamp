@@ -10,6 +10,12 @@
 
   }
 }
+.nav-link:hover
+{
+    transition: 0.5s;
+    padding: inherit;
+    color: rgb(124, 122, 122);
+}
 body
 {
     background-color: rgb(124, 122, 122);
