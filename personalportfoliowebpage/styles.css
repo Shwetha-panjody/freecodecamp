@@ -1,32 +1,203 @@
-@media(max-width:700px)
+/* other than mobile */
+@media(min-width:750px) {
+    .b1
+    {
+        margin: 0;
+        padding: 20px;
+        background-color: inherit;
+        font-size: 25px;
+        border: none;
+    }
+    #welcome-section
+    {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: -1;
+        background: linear-gradient(to right, black, rgba(0, 0, 0, 0.096)),
+                     url("https://th.bing.com/th/id/R.74f8a3bbfc671f6a3ea3040f94fbd090?rik=1icPO3zwXrd3aA&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f15%2fBusiness-Woman-PNG-Photos.png&ehk=s16Wv6d1e14qPVt6e83IynxKD0UCciQvH3MagyQ2QRs%3d&risl=&pid=ImgRaw&r=0");
+        background-repeat: no-repeat;
+        background-position-x: right;
+
+    }
+    .profile
+    {
+        width: 400px;
+        color:white;
+        text-align: right;
+        padding: 35px;
+    }
+    .content
+    {
+        border-left: 1px solid var(--bg-col1);
+        width: 400px;
+        color: white;
+        padding: 35px;
+
+        animation-duration: 2s;
+        animation-name: fadeinside;
+    }
+    
+    #rgt
+    {
+        float: right;
+    }
+}
+
+/* mobile */
+@media(max-width:750px)
 {
+    .div3div1>div
+{
+    width: 100%;
+    padding: 10px;
+}
   #navbar
   {
     float:left;
   }
+  .b1
+    {
+        margin: 0;
+        padding: 20px 5px;
+        background-color: inherit;
+        font-size: 25px;
+        border: none;
+    }
+  #welcome-section
+    {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: -1;
+        background-color:  var(--bg-col2); 
+    }
+    .profile
+    {
+        position: relative;
+        top:140px;
+        width: 400px;
+        color:white;
+        text-align: center;
+    }
+    .content
+    {
+        position: relative;
+        border-top: 1px solid var(--bg-col1);
+        width: 50%;
+        color: white;
+        padding: 0;
+
+        text-align: center;
+        animation-duration: 2s;
+        animation-name: fadeinbottom;
+    }
+    #rgt
+    {
+        float: left;
+        padding: 20px 0;
+    }
+    
 }
+
+@keyframes fadeinside {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-70%);
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateX(30%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes fadeinbottom {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateY(-30%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+@keyframes fadein {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateY(30%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+.div3div1
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
 
 .div2
 {
-   /* margin-top: 49vw; */
    background-color: var(--bg-col3);
   padding-bottom: 45px;
 }
+.div4>p
+    {
+        padding:20px;
+    }
 #parent
 {
     overflow: hidden;
 }
+.content>h1:hover{
+    color: rgb(255, 127, 148);
+    text-shadow: 0px 0px 9px rgb(252, 0, 42);
+}
 #projects
 {
-    /* border: 1px solid rgb(203, 29, 29); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     width: 100%; 
-    margin-left: auto;
-    margin-right: auto;
-    /* border: 1px solid black; */
 }
 img
 {
@@ -35,13 +206,11 @@ img
 .project-tile
 {
     margin: 10px;
-    width: 30%;
-    /* border: 1px solid rgb(174, 170, 170); */
+    width: 350px;
     background-color: var(--bg-col4);
     text-align: center;
     box-shadow: 10px 10px 15px rgb(38, 38, 39);
     border-radius: 4px;
-    /* border: 1px solid black; */
     margin: 20px;
 }
 .tab
@@ -56,7 +225,7 @@ img
 }
 .proh1
 {
-    margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
 }
 #proh1
@@ -66,6 +235,7 @@ img
     color: white;
     text-decoration: underline;
     font-size: 45px;
+
 }
 .div3
 {
@@ -76,16 +246,13 @@ img
 }
 .div4
 {
+    display: inline;
     background-color: var(--bg-col4);
     border-top:4px solid var(--bg-col1);
     color: white;
-    padding:33px;
-    font-size: 20px;
+    font-size: 15px;
 }
-#rgt
-{
-    float: right;
-}
+
 #div3hr
 {
     background-color: var(--bg-col1);
@@ -139,44 +306,27 @@ a{
     color: white;
     text-decoration: none;
 }
-.b1
-{
-    margin: 0;
-    padding: 20px;
-    background-color: inherit;
-    font-size: 25px;
-    border: none;
-}
 
 .b1:hover
 {
     background-color:  var(--bg-col4);
 }
-#welcome-section
+.img1{
+    
+    width: 140px;
+    animation-duration: 2s;
+    animation-name: fadein;
+   
+}
+.img1:hover
 {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* margin-top:67px; */
-    align-items: center;
-    justify-content: center;
-    /* height:100vw; */
-    z-index: -1;
-    background-color:  var(--bg-col2);
+    
+    transform: rotate(-360deg);
+    transition: 1s ease;
 }
 .bigger{
     font-size: 25px;
  }
-#welcome-section>h1{
-    color: white;
-    font-size: 60px;
-}
-#welcome-section>p{
-    color: var(--bg-col1);
-    font-size: 20px;
-    font-style: italic;
-}
 h6
 {
     font-size: 20px;

@@ -1,3 +1,39 @@
+/* mobile */
+@media(max-width:700px)
+{
+    #data1
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        color: black;
+        font-size: 15px;
+        width: 90%;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 25px;
+        
+    }
+}
+/* other than mobile mobile */
+@media(min-width:700px)
+{
+    #data1
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        color: black;
+        font-size: 15px;
+        width: 60%;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 25px;
+        
+    }
+}
 #image
 {
     max-width:100%;
@@ -34,20 +70,6 @@ h1{
 {
     padding: 17px;
     background-color: rgb(255, 255, 255);
-}
-#data1
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    color: black;
-    font-size: 15px;
-    width: 60%;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    line-height: 25px;
-    
 }
 #data1 p{
     font-size: 15px;
