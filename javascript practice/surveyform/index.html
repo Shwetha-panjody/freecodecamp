@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="loader"></div>
+  </div>
+
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form" action="#">
+    <img src="https://media.giphy.com/media/f67OPmT0AUYRuLv7gT/giphy.gif" alt="">
+
+    <input type="text" id="name" placeholder="Enter Your First Name" onchange="validf(1);">
+    <p id="name_err1" class="err">please enter name</p>
+    <p id="name_err2" class="err">please enter valid name</p>
+
+    <input type="email" id="email" placeholder="Enter Your Email" onchange="validf(2);">
+    <p id="email_err1" class="err">please enter email</p>
+    <p id="email_err2" class="err">please enter valid email</p>
+
+    <p style="text-align: left; color: rgb(147, 93, 93); font-size: 11px; margin-top: 15px;">[should have min 6-12 length and atleast 1 uppercase/lowercase, digit, special character]</p>
+    <input type="password" id="password" minlength="6" maxlength="12" placeholder="New Password" style="margin-top: -4px;" onchange="validf(3);">
+    <p id="password_err1" class="err">please enter password</p>
+    <p id="password_err2" class="err">please enter valid password</p>
+
+    <input type="number" id="number" onpaste="return false" min="13"  max="102" placeholder="Age" onchange="validf(4);">
+    <p id="age_err1" class="err">please enter Age</p>
+    <p id="age_err2" class="err">please enter valid Age[18-102]</p>
+
+    <select id="dropdown" onchange="validf(5);">
+      <option selected disabled value="">Which option best describes your current role?</option>
+      <option value="Junior Software Developer">Junior Software Developer</option>
+      <option value="Software Developer">Software Developer</option>
+      <option value="Senior Software Developer">Senior Software Developer</option>
+      <option value="Q/A Tester">Q/A Tester</option>
+      <option value="Senior Q/A Tester">Senior Q/A Tester</option>
+    </select>
+    <p id="dropdown_err1" class="err">please select the role</p>
+
+    <fieldset>
+      <legend>Would you recommend freeCodeCamp to a friend?</legend>
+      <label id="l1"><input type="radio" class="input-radio" id="recmd1" onchange="validf(6);" value="Definitely" name="recmd">Definitely</label>
+      <label id="l1"><input type="radio" class="input-radio" id="recmd2" onchange="validf(6);" value="Maybe" name="recmd">Maybe</label>
+      <label id="l1"><input type="radio" class="input-radio" id="recmd3" onchange="validf(6);" value="Notsure" name="recmd">Not
+        sure</label>
+        <p id="vcl_err3" class="err">please select valid option</p>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>What vehicle you have ?</legend>
+      <label id="l1" for="vehicle1"><input onchange="validf(7);" class="input-checkbox" type="checkbox" id="vehicle1" name="vehicle1"
+          value="Bike"> I have a bike</label>
+      <label id="l1" for="vehicle2"> <input onchange="validf(7);" class="input-checkbox" type="checkbox" id="vehicle2" name="vehicle2"
+          value="Car">
+        I have a car</label>
+      <label id="l1" for="vehicle3"><input onchange="validf(7);" type="checkbox" class="input-checkbox" id="vehicle3" name="vehicle3"
+          value="Boat"> I have a boat</label>
+      <label id="l1" for="vehicle4"><input onchange="validf(7);" type="checkbox" class="input-checkbox" id="vehicle4" name="vehicle4"
+          value="Nah"> I dont have vehicle</label>
+      <p id="vcl_err1" class="err">please select the vehicle type</p>
+      <p id="vcl_err2" class="err">please select valid option</p>
+    </fieldset>
+
+    <textarea id="sugg" placeholder=" Any comments or suggestions?...." rows="4"></textarea>
+    <input type="submit" id="submit" onclick="load()" >
+  </form>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

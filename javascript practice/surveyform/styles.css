@@ -1,0 +1,219 @@
+h1,
+p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+  /* margin-bottom: 25px; */
+}
+
+#title {
+  font-size: 44px;
+  font-weight: 400px;
+  line-height: 1.2rem;
+  color: var(--color-white);
+  text-shadow: 5px 5px 5px rgb(3, 3, 3);
+}
+
+.err
+{
+  text-align: left;
+  padding-left: 7px;
+  font-weight: bold;
+  display: none;
+  color: rgba(221, 0, 0, 0.662); 
+}
+#description {
+  color: var(--color-white);
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+img{
+  width: 25%;
+}
+#survey-form
+{
+  text-align: center;
+}
+body {
+  margin: 50px auto 0 auto;
+  background: linear-gradient(115deg, #ccd5ae7e,
+      #e9edc979),
+    url(https://www.moneymagpie.com/wp-content/uploads/2016/03/MoneyMagpie_Online-Survey-Woman-Laptop-e1491234398351.jpg)
+    ;
+    background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 20px; */
+  width: 100%;
+
+}
+html
+{
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  padding: 2.5rem;
+  width: 80vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 30px auto;
+  padding-bottom: 2em;
+  /* background: var(--color-darkblue-alpha); */
+  background-color: #fefae0b2;
+  border-radius: 0.25rem;
+}
+fieldset legend
+{
+  text-align: left;
+  color: #ce9963;
+ 
+  font-weight: bold;
+}
+fieldset
+{
+  padding: 0px;
+  padding: 2px 0 2px 2px;
+  /* margin-bottom: 15px; */
+  margin-top: 17px;
+  border: 2px solid #d4a373;
+  border-radius: 4px;
+}
+input[type="radio"]
+{
+  border-color: -internal-light-dark(rgb(194, 22, 2rgb(187, 19, 19), 0));
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="submit"],
+textarea,
+select {
+  margin-top: 15px;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 0 2px 2px;
+  outline: none;
+  background-color: #d4a373;
+}
+
+/* eye icon color changing */
+::-ms-reveal {
+  filter: invert(100%);
+}
+
+select::backdrop {
+  padding: 2px 0 2px 2px;
+}
+
+label {
+  display: block;
+  margin-top: 17px;
+  color: var(--color-white);
+  color: #d4a373;
+  text-shadow: 1px 1px 8px #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+::placeholder,
+select {
+  color: white;
+}
+
+#l1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+  /* background-color:var(--color-green); */
+  background-color: #bc6c25;
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover
+{
+  color: #bc6c25;
+  background-color: white;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-width: 1.15rem;
+  text-align: left;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  color: white;
+  max-width: 99.6%;
+  min-width: 99.6%;
+}
+
+   
+
+
+
+/* spinner */
+.loader {   
+  border: 16px solid #d4a373;
+  
+  border-top: 16px solid #bc6c25;
+  border-radius: 50%;
+  /* border-image: linear-gradient(to right, transparent, #bc6c25, transparent)1; */
+  width: 90px;
+  height: 90px;
+  animation: spin .6s infinite;
+
+}
+/* bg of spinner */
+.overlay
+{
+  position: fixed;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 69, 66, 0.603);
+  display: none;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

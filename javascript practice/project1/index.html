@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for swiper-slide slide show -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header>
+        <a href="" class="logo"><i class="fas fa-utensils"></i>restro.</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="" class="fas fa-heart"></a>
+            <span id="cartitem">0</span>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- search form  starts-->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- search form ends -->
+
+    <!-- add to cart  starts-->
+    <div id="mainbgcart">
+        <!-- <div class="cartheding">
+            <div>
+                <h1>Selected items</h1>
+                <i class="fas fa-times" id="close2"></i>
+            </div>
+        </div>
+        <div class="bgcart">
+
+            <div class="cartitem">
+                <h3>hot chicken</h3>
+                <div class="products">
+                    <img src="images/homeimage2-1-removebg-preview.png" alt="">
+                    <label for="">1</label>
+                    <label for="">remove</label>
+                    <label for="">$7.55</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="total">
+            <label for="">Total Amount</label>
+            <label for="" id="total">$100</label>
+        </div> -->
+    </div>
+    <!-- add to cart ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laboriosam, est aut quod
+                            recusandae asperiores. </p>
+                        <a href="" class="btn">order now</a>
+                    </div>
+                    <div class="img">
+                        <img src="images/homeimage1-removebg-preview.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>Hot Chicken</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laboriosam, est aut quod
+                            recusandae asperiores. </p>
+                        <a href="" class="btn">order now</a>
+                    </div>
+                    <div class="img">
+                        <img src="images/homeimage2-1-removebg-preview.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>cheesa pizza</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laboriosam, est aut quod
+                            recusandae asperiores. </p>
+                        <a href="" class="btn">order now</a>
+                    </div>
+                    <div class="img">
+                        <img src="images/pizza-removebg-preview.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>nutritious food</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia laboriosam, est aut quod
+                            recusandae asperiores. </p>
+                        <a href="" class="btn">order now</a>
+                    </div>
+                    <div class="img">
+                        <img src="images/protine bowl3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- home section ends  -->
+
+    <!-- dishes section starts here -->
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading">our dishes</h3>
+        <h1 class="heading">popular dishes</h1>
+        <div class="box-container">
+            <!-- generating in js - populardishes()   -->
+        </div>
+    </section>
+    <!-- dishes section ends here -->
+
+    <!-- about section starts here -->
+    <section class="about" id="about">
+        <h3 class="sub-heading">about us</h3>
+        <h1 class="heading">why choose us ?</h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/pexels-momo-king-5409010-removebg-preview.png" alt="">
+            </div>
+            <div class="content">
+                <h3>best food in the country</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor dolores, tenetur magnam voluptate
+                    veniam quam nobis ex quae obcaecati itaque, ab iure, suscipit maiores fugiat! Beatae hic doloribus
+                    cupiditate!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi animi iste unde iure placeat
+                    explicabo iusto ut qui culpa ratione!</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>fast delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payment</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section end here -->
+
+    <!-- menu section starts -->
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">our menu</h3>
+        <h1 class="heading">todays special</h1>
+        <div class="box-container">
+            <!-- generating in js - todayspecial() -->
+        </div>
+    </section>
+    <!-- menu section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h3 class="sub-heading">customer's review</h3>
+        <h1 class="heading">what they say ?</h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <i class="fas fa-quote-right"></i>
+                        <img src="images/omid-armin-_BkjDspEw_k-unsplash.jpg" alt="">
+                        <div class="user-info">
+                            <h3>omid</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id eum harum dolor, consequatur dolore accusantium sed excepturi perspiciatis adipisci ea hic! Consequatur esse dolore nulla tempore explicabo iste. Rem?</p>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <i class="fas fa-quote-right"></i>
+                        <img src="images/mieke-campbell-48JNwqISSLk-unsplash.jpg" alt="">
+                        <div class="user-info">
+                            <h3>halsey</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id eum harum dolor, consequatur dolore accusantium sed excepturi perspiciatis adipisci ea hic! Consequatur esse dolore nulla tempore explicabo iste. Rem?</p>
+
+                </div>
+
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <i class="fas fa-quote-right"></i>
+                        <img src="images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="">
+                        <div class="user-info">
+                            <h3>christopher</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id eum harum dolor, consequatur dolore accusantium sed excepturi perspiciatis adipisci ea hic! Consequatur esse dolore nulla tempore explicabo iste. Rem?</p>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <i class="fas fa-quote-right"></i>
+                        <img src="images/kimson-doan-HD8KlyWRYYM-unsplash.jpg" alt="">
+                        <div class="user-info">
+                            <h3>kim son</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id eum harum dolor, consequatur dolore accusantium sed excepturi perspiciatis adipisci ea hic! Consequatur esse dolore nulla tempore explicabo iste. Rem?</p>
+
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <i class="fas fa-quote-right"></i>
+                        <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="">
+                        <div class="user-info">
+                            <h3>michael</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure id eum harum dolor, consequatur dolore accusantium sed excepturi perspiciatis adipisci ea hic! Consequatur esse dolore nulla tempore explicabo iste. Rem?</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- order section starts -->
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1>
+
+        <form action="">
+            <div class="inputbox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter your order">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="text" placeholder="with extra food">
+                </div>
+                <div class="input">
+                    <span>how much</span>
+                    <input type="text" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input name="ordertime" type="datetime-local">
+                </div>
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="enter your address"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="enter your message"></textarea>
+                </div>
+
+                <input type="submit" value="order now" class="btn">
+            </div>
+        </form>
+    </section>
+    <!-- order section ends -->
+
+    <!-- footer section starts here -->
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>locations</h3>
+                <a href="">india</a>
+                <a href="">japan</a>
+                <a href="">maxico</a>
+                <a href="">south korea</a>
+                <a href="">france</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="">+123-456-789</a>
+                <a href="">+111-333-444</a>
+                <a href="">abc@mail.com</a>
+                <a href="">egd44ns@mail.com</a>
+                <a href="">Managlore, India - 574200</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="">facebook</a>
+                <a href="">instagram</a>
+                <a href="">twitter</a>
+                <a href="">linkedin</a> 
+            </div>
+        </div>
+        <div class="credit"> copyright @ 2023 by <span>Ms. shwetha Panjodi</span></div>
+    </section>
+    <!-- footer section ends here -->
+
+
+    <!-- for swiper-slide slide show -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script> -->
+</body>
+
+</html>
